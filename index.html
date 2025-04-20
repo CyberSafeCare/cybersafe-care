@@ -116,12 +116,34 @@
             text-align: center;
         }
 
+        .social-links {
+            background-color: var(--light);
+            padding: 2rem 5%;
+            text-align: center;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: var(--secondary-blue);
+        }
+
         footer {
             background-color: var(--dark);
             color: var(--light);
             text-align: center;
             padding: 2rem 5%;
-            margin-top: 4rem;
         }
 
         @media (max-width: 768px) {
@@ -134,7 +156,7 @@
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="https://s3.cybersafe.care/api/v1/buckets/static/objects/download?preview=true&prefix=images%2Fsuporte%2Fsidebar-collapsed.png" alt="CyberSafe Care Logo">
+            <img src="https://s3.cybersafe.care/api/v1/buckets/static/objects/download?preview=true&prefix=images%2Fsuporte%2Fsidebar-logo.png" alt="CyberSafe Care Logo">
         </div>
         <div class="nav-links">
             <a href="#servicos">Serviços</a>
@@ -177,8 +199,24 @@
     <section class="dpo-section">
         <h2>Conformidade Regulatória Simplificada</h2>
         <p>Nossos especialistas em privacidade de dados atuam como encarregados de proteção de dados para sua empresa</p>
-        <a href="#contato" class="cta-button" style="margin-top: 1rem;">Saiba Mais</a>
     </section>
+
+    <div class="social-links">
+        <div class="social-icons">
+            <a href="https://github.com/CyberSafeCare" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/cybersafecare" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/s" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:contato@cybersafe.care" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
 
     <footer>
         <p>© 2024 CyberSafe Care. Todos os direitos reservados.</p>
