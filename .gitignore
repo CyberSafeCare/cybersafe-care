@@ -1,0 +1,5 @@
+# Ignorando arquivos MD
+*.md
+
+# Ignorando arquivo LICENSE
+LICENSE
